@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exam Registration</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="title">Exam Registration</h1>
+            <p id="description">Register for the exam now by completing the form below</p>
+        </header>
+        <main>
+            <form id="survey-form" action="" method="post">
+                <fieldset>
+                    <legend>Personal Info:</legend>
+                    <label for="name" id="name-label">Full Name
+                        <input type="text" name="full-name" id="name" placeholder="Enter Your Name" required>
+                    </label>
+                    <label for="email" id="email-label">Email
+                        <input type="email" name="email-id" id="email" placeholder="Enter Your Email" required>
+                    </label>
+                    <label for="number" id="number-label">Age
+                        <input type="number" name="age" id="number" placeholder="Enter Your Age" min="15" max="45" required>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <label for="male">
+                        <input class="inline" type="radio" name="gender" id="male" value="male" checked> Male
+                    </label>
+                    <label for="female">
+                        <input class="inline" type="radio" name="gender" id="female" value="female"> Female
+                    </label>
+                    <label for="other">
+                        <input class="inline" type="radio" name="gender" id="other" value="other"> Other
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Course:</legend>
+                    <label for="mca">
+                        <input class="inline" type="checkbox" name="mca" id="mca" value="mca"> MCA
+                    </label>
+                    <label for="msc-ai">
+                        <input class="inline" type="checkbox" name="msc-ai" id="msc-ai" value="msc-ai"> MSc AI
+                    </label>
+                    <label for="msc-cs">
+                        <input class="inline" type="checkbox" name="msc-cs" id="msc-cs" value="msc-cs"> MSc CS
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Exam Centre:</legend>
+                    <select name="exam-centre" id="dropdown">
+                        <option value="" selected>Select Exam Centre</option>
+                        <option value="alappuzha">Alappuzha</option>
+                        <option value="eranakulam">Ernakulam</option>
+                        <option value="kottayam">Kottayam</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Feedback:</legend>
+                    <label for="feedback"> 
+                        <textarea name="feedback" id="feedback" cols="30" rows="5" placeholder="Any suggestions or questions?"></textarea>
+                    </label>
+                </fieldset>
+                <input type="submit" id="submit" value="Register">
+            </form>
+        </main>
+    </body>
+</html>

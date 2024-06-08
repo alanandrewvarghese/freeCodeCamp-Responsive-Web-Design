@@ -1,0 +1,92 @@
+body {
+    background-color: #222222;
+    background-image: url("https://images.unsplash.com/photo-1484807352052-23338990c6c6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: Tahoma;
+    color:white;
+    font-size: 16px;
+}
+
+header {
+    background-color: rgba(0,0,0,0.2);
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+h1,p{
+    margin:1em auto;
+}
+
+main{
+    margin: 0;
+    padding: 0;
+}
+
+form{
+    max-width: 700px;
+    min-width: 300px;
+    width: 60vw;
+    margin:auto;
+    padding: 2em 1em;
+    background-color: rgba(0,0,0,0.9);
+    font-size: 1.1em;
+}
+
+fieldset{
+    border: none;
+    margin: 0;
+    padding: 0.1rem 0;
+}
+
+legend{
+    margin: 0 -3px;
+    
+}
+
+label{
+    display:block;
+    margin: 0.5em 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+textarea{
+    font-size: 16px;
+}
+
+select{
+    margin:1em 0 1em 0;
+}
+
+input[type="submit"]{
+    max-width: 300px;
+    width:90%;
+    margin: 0 auto;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    border: #222222 1px solid;
+}
+
+input[type="submit"]:hover{
+    background-color: #222222;
+    color: white;
+    border: #ffffff 1px solid;
+}
