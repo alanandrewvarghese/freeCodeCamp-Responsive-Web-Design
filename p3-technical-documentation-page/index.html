@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header class="nav-heading">Git Documentation</header>
+      <a class="nav-link" href="#Introduction">Introduction</a>
+      <a class="nav-link" href="#Prerequisites">Prerequisites</a>
+      <a class="nav-link" href="#Basic_Git_Commands">Basic Git Commands</a>
+      <a class="nav-link" href="#Advanced_Git_Commands">Advanced Git Commands</a>
+      <a class="nav-link" href="#Working_with_Remotes">Working with Remotes</a>
+      <a class="nav-link" href="#Undoing_Changes">Undoing Changes</a>
+      <a class="nav-link last" href="#Reference">Reference</a>
+    </nav>
+    <main id="main-doc">
+
+      <section class="main-section" id="Introduction">
+        <header class="section-heading">Introduction</header>
+        <p class="text">Git is a distributed version control system designed to handle everything from small to very large projects with speed and efficiency.</p>
+      </section>
+
+      <section class="main-section" id="Prerequisites">
+        <header class="section-heading">Prerequisites</header>
+        <p class="text">This guide assumes you have the following basic background:</p>
+        <ul class="list">
+            <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
+            <li>Good working knowledge of command line interfaces.</li>
+            <li>Some programming experience. If you are new to programming, try an introductory tutorial on Git.</li>
+            <li>Basic understanding of version control concepts.</li>
+            <li>Familiarity with a text editor for code editing.</li>
+          </ul>
+      </section>
+
+      <section class="main-section" id="Basic_Git_Commands">
+        <header class="section-heading">Basic Git Commands</header>
+
+        <p class="text bold">git init</p>
+        <p class="text">Initializes a new Git repository. Run this command inside the directory where you want to create a new repository.</p>
+        
+        <p class="text bold">git clone</p>
+        <p class="text">Clones an existing Git repository from a remote server. The syntax is:</p>
+        <code class="code">git clone [repository URL]</code>
+
+        <p class="text bold">git status</p>
+        <p class="text">Displays the state of the working directory and staging area. It shows which changes have been staged, which haven’t, and which files aren’t being tracked by Git.</p>
+
+        <p class="text bold">git add</p>
+        <p class="text">Adds changes in the working directory to the staging area. The syntax is:</p>
+        <code class="code">git add [file]</code>
+        <p class="text">or to add all changes:</p>
+        <code class="code">git add .</code>
+
+        <p class="text bold">git commit</p>
+        <p class="text">Records the changes in the repository. The syntax is:</p>
+        <code class="code">git commit -m "commit message"</code>
+
+        <p class="text bold">git push</p>
+        <p class="text">Uploads local repository content to a remote repository. The syntax is:</p>
+        <code class="code">git push [remote] [branch]</code>
+
+        <p class="text bold">git pull</p>
+        <p class="text">Fetches and integrates changes from a remote repository to the local repository. The syntax is:</p>
+        <code class="code">git pull [remote]</code>
+
+        <p class="text bold">git branch</p>
+        <p class="text">Lists, creates, or deletes branches. To list branches:</p>
+        <code class="code">git branch</code>
+        <p class="text">create a new branch:</p>
+        <code class="code">git branch [branch name]</code>
+        <p class="text">To delete a branch:</p>
+        <code class="code">git branch -d [branch name]</code>
+
+        <p class="text bold">git checkout</p>
+        <p class="text">Switches branches or restores working tree files. The syntax to switch branches is:</p>
+        <code class="code">git checkout [branch name]</code>
+      </section>
+
+      <section class="main-section" id="Advanced_Git_Commands">
+        <header class="section-heading">Advanced Git Commands</header>
+
+        <p class="text bold">git merge</p>
+        <p class="text">Combines multiple sequences of commits into one unified history. The syntax is:</p>
+        <code class="code">git merge [branch name]</code>
+
+        <p class="text bold">git merge [branch name]</p>
+        <p class="text">Reapplies commits on top of another base tip. The syntax is:</p>
+        <code class="code">git rebase [branch name]</code>
+
+        <p class="text bold">git stash</p>
+        <p class="text">Temporarily shelves changes made to the working directory. The syntax is:</p>
+        <code class="code">git stash</code>        
+        <p class="text">To apply stashed changes:</p>
+        <code class="code">git stash apply</code>
+
+        <p class="text bold">git tag</p>
+        <p class="text">Creates a tag in the Git repository. The syntax is:</p>
+        <code class="code">git tag [tag name]</code>
+      </section>
+
+      <section class="main-section" id="Working_with_Remotes">
+        <header class="section-heading">Working with Remotes</header>
+        <p class="text bold">git remote</p>
+        <p class="text">Manages the set of tracked repositories. To list remotes:</p>
+        <code class="code">git remote -v</code>
+        <p class="text">To add a new remote:</p>
+        <code class="code">git remote add [remote name] [remote URL]</code>
+        <p class="text">To remove a remote:</p>
+        <code class="code">git remote remove [remote name]</code>
+      </section>
+
+      <section class="main-section" id="Undoing_Changes">
+        <header class="section-heading">Undoing Changes</header>
+
+        <p class="text bold">git reset</p>
+        <p class="text">Resets the current HEAD to a specified state. The syntax is:</p>
+        <code class="code">git reset [commit]</code>
+
+        <p class="text bold">git revert</p>
+        <p class="text">Creates a new commit that undoes the changes made by a previous commit. The syntax is:</p>
+        <code class="code">git revert [commit]</code>
+
+      </section>
+
+      <section class="main-section" id="Reference">
+        <header class="section-heading">Reference</header>
+        <p class="text">All the documentation on this page is derived from <a class="reference-link" target="_blank" href="https://git-scm.com/doc">Git Documentation</a>.</p>
+      </section>
+
+    </main>
+  </body>
+</html>
