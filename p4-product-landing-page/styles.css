@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #333333;
+}
+body{
+    background-color: #f4f4f4;
+}
+
+main{
+    max-width: 800px;
+    margin: 0 auto;
+}
+#header{
+    margin: 0.5rem 2rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+}
+
+#header-img{
+    width: 160px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    background-color: #f4f4f4;
+}
+
+#nav-bar{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.nav-link{
+    text-decoration: none;
+    padding: 0.5rem;
+    color: #0071e3;
+}
+
+.nav-link:hover{
+    color: #0056b3;
+}
+
+section{
+    margin: 3rem 1rem;
+}
+
+.sub-head{
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    margin: 2rem 0;
+}
+
+.feature-icon{
+    font-size: 2rem;;
+    float: left
+}
+
+.feature-title{
+    margin: 0.5rem 0;
+}
+
+#Launch_Video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#video{
+    padding-top: 1rem;
+}
+
+.pricing-data{
+    display: flex;
+    justify-content: space-around;
+    gap: 3px;
+    padding-top: 1rem;
+}
+
+
+
+.pricing-option{
+    border: #333333 1px solid;
+    border-radius: 1%;
+    width: 33%;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.pricing-option h3{
+    padding: 0.5rem;
+    background-color: #333333;
+    color: #f4f4f4;
+}
+
+.pricing-option p{
+    padding: 3rem 0;
+    font-size: 1.3rem;
+}
+
+.pricing-option button{
+    padding: 0.5rem 1rem;
+    width: 90%;
+    background-color: #333333;
+    color: #f4f4f4;
+    border: none;
+    cursor: pointer;
+}
+
+#email-submit form{
+    display: flex;
+}
+
+#email-submit input[type="email"]{
+    width: 70%;
+    height: 1.8rem;
+}
+
+#email-submit input[type="submit"]{
+    width: 30%;
+}
+
+@media(max-width:600px){
+    .pricing-data{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 3px;
+        padding-top: 1rem;
+    }
+
+    .pricing-option{
+        border: #333333 1px solid;
+        border-radius: 1%;
+        width: 60%;
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    #email-submit form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #email-submit input[type="email"]{
+        width: 70%;
+        height: 1.8rem;
+    }
+    
+    #email-submit input[type="submit"]{
+        width: 30%;
+        height: 1.8rem;
+
+    }
+}
